@@ -1,0 +1,23 @@
+import animaScroll from './modules/animaScrol.js';
+import scrollSuave from './modules/scrollSuave.js';
+import initiAccordion from './modules/accordeonList.js';
+import navTab from './modules/navTab.js';
+import animaisFetch from './modules/fetch-animais.js';
+import modal from './modules/modal.js';
+import tooltip from './modules/tooltip.js';
+import dropdown from './modules/dropdown.js';
+import menuMobile from './modules/menu-hamburguer.js';
+import animaNumeros from './modules/animaNumeros.js';
+import date from './modules/funcionamento.js';
+
+animaisFetch();
+date();
+animaNumeros();
+menuMobile();
+modal();
+navTab();
+initiAccordion();
+scrollSuave();
+animaScroll();
+tooltip();
+dropdown();

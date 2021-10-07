@@ -1,0 +1,77 @@
+.modal-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 220200;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.ativo {
+    display: flex;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 40px;
+    border: 10px solid #fb5;
+    box-shadow: 0 0 0 10px #fff;
+    position: relative;
+    animation: modal .3s ease-out;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fechar {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    background: gold;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.modal label {
+    font-family: monospace;
+    display: block;
+    font-weight: bold;
+    margin: 1rem 0 .5rem 0;
+}
+
+.modal input {
+    width: 100%;
+    padding: .7rem .5rem;
+    box-sizing: border-box;
+}
+
+.modal button[type="submit"] {
+    display: block;
+    background: gold;
+    border: none;
+    border-radius: 4px;
+    padding: .7rem .2rem;
+    font-size: 1rem;
+    font-family: monospace;
+    color: #fff;
+    margin-top: 15px;
+}

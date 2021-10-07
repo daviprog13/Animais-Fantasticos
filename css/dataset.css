@@ -1,0 +1,19 @@
+.aberto::after {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.fechado::after {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid black;
+}
